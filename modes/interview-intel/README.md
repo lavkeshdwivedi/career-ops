@@ -6,8 +6,12 @@ Company-specific interview prep guides for AI/tech roles. Each file covers the i
 
 | Company | File | Last Updated |
 |---------|------|--------------|
+| Amazon | [Amazon.md](Amazon.md) | 2025 |
 | Anthropic | [Anthropic.md](Anthropic.md) | 2025 |
+| Google DeepMind | [DeepMind.md](DeepMind.md) | 2025 |
 | Google | [Google.md](Google.md) | 2025 |
+| Meta | [Meta.md](Meta.md) | 2025 |
+| Microsoft | [Microsoft.md](Microsoft.md) | 2025 |
 | OpenAI | [OpenAI.md](OpenAI.md) | 2025 |
 
 ## How to Use
@@ -27,7 +31,7 @@ Or read the file directly — each guide is self-contained.
 3. Keep content based on publicly available information (Glassdoor, Blind, official engineering blogs, candidate write-ups).
 4. Submit a PR referencing [issue #76](https://github.com/santifer/career-ops/issues/76).
 
-**File naming:** Use the official company name in PascalCase (e.g., `DeepMind.md`, `MetaAI.md`, `MistralAI.md`).
+**File naming:** Use the official company name in PascalCase (e.g., `Apple.md`, `Nvidia.md`, `MistralAI.md`).
 
 **Content guidelines:**
 - Prioritize signal over noise — what actually differentiates this company's process?
