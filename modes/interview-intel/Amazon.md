@@ -2,11 +2,11 @@
 
 ## Overview
 
-Amazon's interview process is unlike any other major tech company in one critical way: the **Leadership Principles (LPs)** are not a soft filter — they are the primary evaluation framework. Every behavioral question maps to one or more LPs, and interviewers score candidates against them explicitly. You can have excellent coding skills and still fail because your behavioral stories don't demonstrate LP depth.
+Amazon's interview process is unlike any other major tech company in one critical way: the Leadership Principles are not a soft filter. They are the primary evaluation framework. Every behavioral question maps to one or more LPs, and interviewers score you against them explicitly. You can have excellent coding skills and still fail because your behavioral stories don't reflect LP depth.
 
-For ML/AI roles (Alexa AI, AWS AI/ML, AGI, Bedrock, etc.), there's strong additional emphasis on applied ML systems, production reliability, and customer-backward thinking.
+For ML and AI roles (Alexa AI, AWS AI/ML, AGI, Bedrock), there's strong additional emphasis on applied ML systems, production reliability, and customer-backward thinking.
 
-> ⚠️ Verify: Process details change. Confirm current format with your recruiter before the first call.
+> Verify: Process details change. Confirm the current format with your recruiter before the first call.
 
 ---
 
@@ -14,26 +14,26 @@ For ML/AI roles (Alexa AI, AWS AI/ML, AGI, Bedrock, etc.), there's strong additi
 
 | Stage | Format | Typical Duration |
 |-------|--------|-----------------|
-| Recruiter screen | 30 min phone | Within 1 week |
-| Online assessment (OA) | 2 coding problems, 90 min, timed | Within 1–2 weeks (some roles) |
-| Technical phone screen × 1–2 | 60 min, coding + LP question(s) | 1–2 weeks |
-| Virtual on-site ("loop") | 5–7 rounds × 60 min | Scheduled as a full day |
-| Debrief / bar-raiser decision | Internal — candidate not present | 3–7 days |
+| Recruiter screen | 30 min phone call | Within 1 week |
+| Online assessment (OA) | 2 coding problems, 90 min, timed | Within 1-2 weeks (some roles) |
+| Technical phone screen x 1-2 | 60 min each, coding and LP questions | 1-2 weeks |
+| Virtual on-site ("loop") | 5-7 rounds x 60 min each | Scheduled as a full day |
+| Bar raiser debrief | Internal, candidate not present | 3-7 days |
 | Offer | Written, tight negotiation window | Within 1 week |
 
-### On-site loop breakdown (SDE / Applied Scientist, SDE II–Principal)
+### On-site loop breakdown (SDE or Applied Scientist, SDE II to Principal)
 
-- **Coding × 2** — algorithms + implementation problems, often LP-adjacent framing
-- **System design × 1** — large-scale distributed systems ("design Amazon's X")
-- **ML design × 1** (ML roles) — end-to-end ML pipeline design, evaluation strategy
-- **Behavioral × 2–3** — LP deep dives; each interviewer focuses on 2–4 LPs
-- **Bar raiser × 1** — senior interviewer from a different team, focused on overall bar, not team fit
+- **Coding x 2** -- algorithms and implementation problems, often LP-adjacent framing
+- **System design x 1** -- large-scale distributed systems ("design Amazon's X")
+- **ML design x 1** (ML roles) -- end-to-end ML pipeline design and evaluation strategy
+- **Behavioral x 2-3** -- LP deep dives, each interviewer covers 2-4 LPs
+- **Bar raiser x 1** -- senior interviewer from a different team, focused on the overall bar
 
 ---
 
-## Leadership Principles — Interview Mapping
+## Leadership Principles: Interview Mapping
 
-Amazon has 16 Leadership Principles. You will be asked about most of them across your loop. Prepare specific STAR+R stories for each:
+Amazon has 16 Leadership Principles. You'll be asked about most of them across your loop. Prepare specific STAR+R stories for each:
 
 | LP | Common Question Pattern |
 |----|------------------------|
@@ -51,7 +51,7 @@ Amazon has 16 Leadership Principles. You will be asked about most of them across
 | Dive Deep | "Tell me about a time you used data to investigate an unexpected problem." |
 | Have Backbone; Disagree and Commit | "Tell me about a time you disagreed with your manager. What happened?" |
 | Deliver Results | "Tell me about the most impactful project you've owned end-to-end." |
-| Strive to be Earth's Best Employer | "How have you contributed to an inclusive or psychologically safe environment?" |
+| Strive to be Earth's Best Employer | "How have you contributed to an inclusive environment?" |
 | Success and Scale Bring Broad Responsibility | "How do you think about the broader societal impact of your work?" |
 
 ---
@@ -77,16 +77,16 @@ Amazon has 16 Leadership Principles. You will be asked about most of them across
 
 ## Coding Tasks
 
-Expect **LeetCode medium** difficulty. Two problems per coding round in 60 minutes:
+Expect LeetCode medium difficulty. Two problems in 60 minutes per coding round:
 
 - Array and hash map manipulation
 - String processing and parsing
 - Linked list operations
 - Tree and graph traversal
-- Sliding window / two pointers
+- Sliding window and two pointers
 - Sorting and binary search variants
 
-**Python, Java, or C++** are most common. Amazon interviewers pay close attention to edge cases — handle null inputs, empty arrays, and boundary conditions explicitly. Think out loud and narrate your approach before writing code.
+Python, Java, or C++ are most common. Your interviewer pays close attention to edge cases. Handle null inputs, empty arrays, and boundary conditions explicitly. Think out loud and narrate your approach before writing code.
 
 ---
 
@@ -94,23 +94,23 @@ Expect **LeetCode medium** difficulty. Two problems per coding round in 60 minut
 
 | Signal | What they're looking for |
 |--------|--------------------------|
-| **LP story depth** | Shallow stories ("I once helped a customer") fail. Deep stories with context, conflict, specific actions, and measurable outcomes succeed. |
-| **Customer-backward thinking** | Start every design answer from the customer problem, not the tech stack. What does the user need? Then work backward to the architecture. |
-| **Bar raiser awareness** | The bar raiser is not your friend or your enemy — they're enforcing the company bar. Focus on being clear, specific, and evidence-based. |
-| **Data fluency** | Amazon is extremely metrics-driven. Quantify outcomes in every behavioral story. "We improved latency" is weak. "p99 dropped from 2.1s to 400ms, reducing cart abandonment by 8%" is strong. |
-| **Frugality signals** | Show you think about cost and efficiency. Unlimited budget solutions score lower than constrained, practical ones. |
-| **Delivery mentality** | Amazon values shipping. Show you can define scope, cut what doesn't matter, and deliver on time — not just plan perfectly. |
+| **LP story depth** | Shallow stories fail. Deep stories with context, conflict, specific actions, and measurable outcomes succeed. |
+| **Customer-backward thinking** | Start every design from the customer problem, not the tech stack. What does the user need? Then work backward to the architecture. |
+| **Bar raiser awareness** | The bar raiser is enforcing the company bar, not making a team hire decision. Focus on being clear, specific, and evidence-based. |
+| **Data fluency** | Amazon is extremely metrics-driven. "We improved latency" is weak. "p99 dropped from 2.1s to 400ms, reducing cart abandonment by 8%" is strong. |
+| **Frugality signals** | Show you think about cost and efficiency. Unlimited-budget solutions score lower than constrained, practical ones. |
+| **Delivery mentality** | Show you can define scope, cut what doesn't matter, and ship on time, not just plan perfectly. |
 
 ---
 
 ## Pro Tips
 
-1. **Prepare 10+ STAR+R stories, mapped to specific LPs.** Each story should be flexible enough to answer 3–4 different LP questions. Before the loop, map your stories to the LP grid and identify gaps.
-2. **Use the STAR format strictly — and add the R (Result).** Amazon interviewers are trained to probe for the Result if you omit it. Don't make them drag it out of you.
+1. **Prepare 10+ STAR+R stories, mapped to specific LPs.** Each story should be flexible enough to answer 3-4 different LP questions. Before the loop, map your stories to the LP grid and identify the gaps.
+2. **Always add the Result to your STAR story.** Amazon interviewers are trained to probe for the Result if you omit it. Don't make them drag it out of you.
 3. **The bar raiser can override the team.** If the bar raiser thinks you're below bar, you won't get an offer even if every team interviewer said yes. Treat this round with the same weight as the others.
-4. **Ask about the team's tenets.** Many Amazon teams have explicit written tenets that guide decisions. Asking to see them shows LP alignment (Dive Deep, Insist on Highest Standards).
+4. **Ask about the team's tenets.** Many Amazon teams have explicit written tenets that guide decisions. Asking to see them shows LP alignment: Dive Deep and Insist on Highest Standards.
 5. **Total comp at Amazon is front-loaded.** Year 1 and Year 2 often include signing bonuses to compensate for back-loaded RSU vesting (years 3 and 4 vest faster). Model out 4-year total comp before comparing offers.
-6. **Level calibration affects your scope.** SDE II vs. SDE III (L6) is a significant jump in autonomy and impact expected. Make your stories reflect the level you're targeting.
+6. **Level calibration affects your scope.** SDE II vs. SDE III (L6) is a significant jump in autonomy and expected impact. Make your stories reflect the level you're targeting.
 
 ---
 

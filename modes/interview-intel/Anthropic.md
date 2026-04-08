@@ -2,11 +2,11 @@
 
 ## Overview
 
-Anthropic's process is thorough, thoughtful, and deliberately paced. Interviewers are deeply technical and genuinely curious — they value people who can engage seriously with both the capabilities and the safety implications of large language models. Expect a mix of engineering depth, research breadth, and serious conversation about AI risk.
+Anthropic's interview process is deliberately different from the standard FAANG playbook. The focus is on safety-conscious thinking, genuine intellectual depth, and your ability to hold complexity without collapsing it. If you're used to grinding LeetCode and calling it prep, you'll be underprepared here. The team wants to see how you reason, not just what you know.
 
-The culture is collaborative rather than combative. Interviewers want to see how you think, not just whether you get the right answer.
+The process also includes an async writing component, which signals something real about the culture: they communicate in writing, they value clarity, and they expect you to as well.
 
-> ⚠️ Verify: Process details change. Confirm current format with your recruiter before the first call.
+> Verify: Process details change. Confirm the current format with your recruiter before the first call.
 
 ---
 
@@ -14,21 +14,20 @@ The culture is collaborative rather than combative. Interviewers want to see how
 
 | Stage | Format | Typical Duration |
 |-------|--------|-----------------|
-| Recruiter screen | 30 min phone | 1 week to schedule |
-| Hiring manager / team intro | 45–60 min, background + team fit | Within 2 weeks |
-| Technical screen × 1–2 | Coding or ML deep dive, 60 min each | 1–2 weeks |
-| Virtual on-site | 4–6 rounds × 60 min | Scheduled as a full day block |
-| Writing / work sample (some roles) | Async, 2–4 hours | Sent after technical screen |
-| Reference checks | 3 references, substantive | After on-site |
-| Offer | Written offer with detailed breakdown | 1–2 weeks post on-site |
+| Recruiter screen | 30 min phone call | Within 1 week |
+| Hiring manager call | 45-60 min, background and scope discussion | Within 1-2 weeks |
+| Written exercise (some roles) | Async, 1-3 hours at home | 1 week window |
+| Technical screen | 60-90 min, coding or ML depth | Within 2 weeks |
+| Virtual on-site | 4-5 rounds x 60 min each | Scheduled as a block |
+| Reference checks and offer | Thorough references, then written offer | 1-2 weeks post on-site |
 
-### On-site round breakdown (typical for mid–senior engineering)
+### On-site round breakdown (Research Engineer or Applied Engineer)
 
-- **Coding × 2** — algorithms, data structures, sometimes ML-adjacent
-- **System design × 1** — distributed systems or ML infrastructure
-- **ML / research depth × 1** — model evaluation, safety, interpretability, or fine-tuning
-- **Mission & values × 1** — reasoning about AI safety, tradeoffs, and ethics
-- **Cross-functional fit × 1** — collaboration, communication, judgment under ambiguity
+- **Coding x 1-2** -- problem solving, clean code over raw speed
+- **ML depth x 1** -- model internals, RLHF, Constitutional AI, evaluation design
+- **System design x 1** -- ML infrastructure or research tooling at scale
+- **Behavioral and values x 1** -- safety thinking, intellectual humility, collaboration
+- **Research discussion x 1** -- often a paper review or a walkthrough of your own work
 
 ---
 
@@ -36,39 +35,38 @@ The culture is collaborative rather than combative. Interviewers want to see how
 
 ### Behavioral
 
-- "Why are you interested in Anthropic's approach to AI safety compared to other labs?"
-- "Tell me about a time you had to balance speed with rigor — how did you decide?"
-- "Describe a project where you had to change course mid-execution based on new information."
-- "What's a technical belief you've changed your mind on in the last two years?"
-- "How do you handle disagreements about what to build or how to build it?"
+- "Why Anthropic specifically? What's your view on the approach we're taking?"
+- "Tell me about a time you identified a risk in a project that others hadn't considered."
+- "Describe a situation where you had to change your mind about something important."
+- "How do you handle being wrong in public?"
+- "What's the hardest ethical or technical tradeoff you've faced in your work?"
 
 ### ML / Applied AI
 
-- "How would you evaluate whether a fine-tuned model is actually safer than its base model?"
-- "Walk me through the Constitutional AI approach — what are its strengths and blind spots?"
-- "How do you measure alignment in a model that you can't enumerate all possible inputs for?"
-- "What are the tradeoffs between RLHF and direct preference optimization (DPO)?"
-- "Design a red-teaming framework for a new capability added to Claude."
+- "How does Constitutional AI differ from standard RLHF? What does it get right and where does it fall short?"
+- "Design an evaluation suite for a model that needs to be both helpful and safe."
+- "How would you measure whether a model is genuinely uncertain vs. confidently wrong?"
+- "Walk me through how you'd red-team a new model capability before shipping."
+- "What's your intuition for why scaling continues to work, and where do you think it breaks?"
 
 ### System Design
 
-- "Design a feedback collection pipeline that minimizes annotation bias."
-- "How would you build an inference system that can gracefully degrade under load?"
-- "Design a versioning and rollback system for ML model deployments in production."
+- "Design a real-time model evaluation pipeline that can run thousands of prompts per day."
+- "Design a human feedback collection system that resists rater bias and gaming."
+- "Design a research infrastructure that lets 50 researchers run experiments without stepping on each other."
 
 ---
 
 ## Coding Tasks
 
-Expect **LeetCode medium** difficulty, sometimes with a research or NLP framing:
+The coding bar here is real but not FAANG-competitive-programmer-hard. What they care about most:
 
-- Implement a basic tokenizer or BPE merge step.
-- Given a dataset of model outputs and human ratings, compute inter-rater reliability.
-- Efficiently compute pairwise similarities in a large embedding space.
-- Parse structured + unstructured mixed data into a canonical format.
-- Classic algorithm problems (graph traversal, DP, string manipulation) — clean code matters.
+- Writing clean, readable code. Not clever code.
+- Handling edge cases explicitly.
+- Being able to reason about complexity and tradeoffs out loud.
+- Python fluency. NumPy and PyTorch comfort helps for ML roles.
 
-**Python is standard.** Anthropic values clarity and correctness over cleverness. Write code you'd be comfortable reviewing with a colleague.
+Common problem types: graph or tree manipulation, string processing, simulation problems, implementing ML components (attention, simple backprop) from scratch.
 
 ---
 
@@ -76,25 +74,24 @@ Expect **LeetCode medium** difficulty, sometimes with a research or NLP framing:
 
 | Signal | What they're looking for |
 |--------|--------------------------|
-| **Safety seriousness** | Do you engage with AI risk as a real engineering and research problem, not a PR concern? Surface-level answers don't pass. |
-| **Epistemic humility** | Anthropic values people who hold views with appropriate uncertainty and update on evidence. Overconfidence is a red flag. |
-| **Writing quality** | Many roles include an async writing sample. Clear, precise writing is a core competency — not a bonus. |
-| **First-principles thinking** | They want to see you build up answers from fundamentals, not recite memorized patterns. |
-| **Collaborative disagreement** | Challenge ideas respectfully. Interviewers test whether you can maintain position under pressure while staying open. |
-| **Mission fit** | Generic "I love AI" answers don't land. Specific engagement with Anthropic's research directions and published work does. |
+| **Safety-first thinking** | Not as a buzzword. As a real lens you apply to technical decisions. If you've never thought about what happens when your model is wrong in a high-stakes context, it will show. |
+| **Intellectual honesty** | Saying "I'm not sure" and then reasoning carefully is valued. Confident answers to questions you don't actually understand are not. |
+| **Writing quality** | Anthropic communicates in documents. Your written exercise and how you talk through problems in the interview both matter. |
+| **Curiosity over credentials** | What have you actually read, built, or thought about? Breadth of genuine curiosity beats an impressive CV with shallow depth. |
+| **Collaborative disagreement** | You should be able to push back thoughtfully without it feeling like a conflict. |
+| **Mission fit** | They're not looking for "excited about AI." They want people who've genuinely grappled with what safe, beneficial AI means in practice. |
 
 ---
 
 ## Pro Tips
 
-1. **Read the Anthropic research blog before your interview.** At minimum, understand the Constitutional AI paper and the Responsible Scaling Policy. Reference them with specific details, not just titles.
-2. **Prepare a concrete view on a safety tradeoff.** "Here's a capability I think we should be careful about, and here's how I'd approach it" shows you think seriously about the mission.
-3. **The writing sample is a real filter.** If there's an async component, treat it as a high-priority deliverable. Clarity, structure, and precision matter as much as content.
-4. **Don't undersell interpretability knowledge.** Even rudimentary familiarity with mechanistic interpretability signals genuine interest in Anthropic's research agenda.
-5. **Ask about team-specific safety challenges.** It shows depth of engagement and helps you evaluate role fit.
-6. **Compensation is structured but negotiable.** Equity vesting schedules and signing bonuses have flexibility. Competing offers are the strongest lever.
+1. **Take the writing exercise seriously.** Treat it like a first-day deliverable, not a box to check. Clarity, structure, and depth all count. Many candidates underinvest here.
+2. **Read the Anthropic research blog and Constitutional AI paper.** Not to recite them, but to have an actual opinion on them. "I agree with your approach to X but I think Y is an open problem" is a great conversation starter.
+3. **Prepare a real answer to "why Anthropic."** The bar here is high. "I believe in the mission" is not enough. Show you understand the specific bets Anthropic is making and why you think they're right.
+4. **Compensation is competitive.** Anthropic has raised significant capital. Base and equity are in the FAANG range for senior roles. Signing bonus has the most flexibility.
+5. **The process is slower than it looks.** Scheduling async exercises plus multiple rounds takes time. Follow up politely if you don't hear back after a week at each stage.
+6. **Ask about the team's current research agenda.** Not just what they published last year. What are they working on now? What's the hardest open problem? The answer tells you a lot about what you'd actually be doing.
 
 ---
 
-*Sources: public Glassdoor reviews, Blind threads, Anthropic engineering blog, open candidate write-ups. Verify current process with your recruiter.*
-
+*Sources: public Glassdoor reviews, Blind threads, Anthropic research blog, open candidate write-ups. Verify current process with your recruiter.*

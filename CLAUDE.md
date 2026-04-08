@@ -305,3 +305,17 @@ Write one TSV file per evaluation to `batch/tracker-additions/{num}-{company-slu
 - No markdown bold (`**`) in status field
 - No dates in status field (use the date column)
 - No extra text (use the notes column)
+
+---
+
+## Writing Style (applies to all docs, reports, and generated text)
+
+Write like a senior engineer friend giving honest advice, not like a corporate doc or an AI assistant.
+
+**Hard rules:**
+- No em dashes. Use a comma, colon, period, or parentheses instead.
+- No AI-like language: no "leverage", "utilize", "demonstrate", "robust", "comprehensive", "seamlessly", "showcase", "stakeholders", "at the forefront", "cutting-edge", "delve".
+- First person, conversational tone. Write "you'll find" not "candidates will find". Write "expect X" not "X is expected".
+- Short sentences. If a sentence has two clauses, split it.
+- Punchy but subtle. No hype, no fluff, no corporate padding.
+- Concrete over abstract. Name the thing, give the number, say the actual tradeoff.

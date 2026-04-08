@@ -2,11 +2,11 @@
 
 ## Overview
 
-Meta's interview process is fast-moving, execution-oriented, and deeply tied to the company's "move fast" culture. Engineering interviews are heavily algorithm-focused at the phone screen stage, with system design and behavioral rounds added at senior levels. AI/ML roles (FAIR, GenAI, Meta AI) additionally test applied ML depth, research thinking, and production ML engineering.
+Meta interviews are execution-focused and move faster than most FAANG companies. The process is highly structured, with interviewers submitting numerical scores per category. Those scores do two things: filter candidates and calibrate their level. So if you're aiming for E6, your stories need to reflect E6 scope, not just E5 quality work.
 
-Meta is known for highly structured scoring: interviewers submit numerical ratings per category, and the hiring committee uses these to level candidates as much as filter them.
+AI and ML roles (FAIR, GenAI, Meta AI) add real ML depth on top of the standard loop.
 
-> ⚠️ Verify: Process details change. Confirm current format with your recruiter before the first call.
+> Verify: Process details change. Confirm the current format with your recruiter before the first call.
 
 ---
 
@@ -14,18 +14,18 @@ Meta is known for highly structured scoring: interviewers submit numerical ratin
 
 | Stage | Format | Typical Duration |
 |-------|--------|-----------------|
-| Recruiter screen | 30 min phone | 3–5 days to schedule |
-| Technical phone screen × 1 | 45–60 min, coding (shared IDE) | Within 2 weeks |
-| Virtual on-site | 4–5 rounds × 45 min | Scheduled as a full day |
-| Hiring committee review | Internal — candidate not present | 1–2 weeks |
+| Recruiter screen | 30 min phone call | 3-5 days to schedule |
+| Technical phone screen x 1 | 45-60 min, coding in a shared IDE | Within 2 weeks |
+| Virtual on-site | 4-5 rounds x 45 min each | Scheduled as a full day |
+| Hiring committee review | Internal, candidate not present | 1-2 weeks |
 | Offer | Written, negotiation window | 1 week post-committee |
 
-### On-site round breakdown (SWE / ML Engineer, E4–E6)
+### On-site round breakdown (SWE or ML Engineer, E4-E6)
 
-- **Coding × 2** — algorithms and data structures
-- **System design × 1** — large-scale distributed systems or ML infrastructure
-- **Behavioral × 1** — leadership, collaboration, Meta values
-- **ML design × 1** (ML roles only) — modeling, evaluation, production ML
+- **Coding x 2** -- algorithms and data structures
+- **System design x 1** -- large-scale distributed systems or ML infrastructure
+- **Behavioral x 1** -- leadership, collaboration, Meta values
+- **ML design x 1** (ML roles only) -- modeling, evaluation, production ML
 
 ---
 
@@ -42,7 +42,7 @@ Meta is known for highly structured scoring: interviewers submit numerical ratin
 ### ML / Applied AI
 
 - "How would you build a content ranking model for a social feed at scale?"
-- "Walk me through how you'd detect and handle concept drift in a production recommendation system."
+- "Walk me through how you'd handle concept drift in a production recommendation system."
 - "Design an experiment to measure the impact of a new ML model on user engagement."
 - "How do you balance precision and recall in a content moderation classifier?"
 - "What are the tradeoffs between model size and serving latency at Meta's scale?"
@@ -50,7 +50,7 @@ Meta is known for highly structured scoring: interviewers submit numerical ratin
 ### System Design
 
 - "Design Facebook's News Feed ranking and delivery pipeline."
-- "Design a real-time messaging system like WhatsApp that handles 1B+ users."
+- "Design a real-time messaging system like WhatsApp for 1B+ users."
 - "Design a distributed event stream processor for clickstream data."
 - "Design a feature store for a large-scale ML platform."
 
@@ -58,18 +58,18 @@ Meta is known for highly structured scoring: interviewers submit numerical ratin
 
 ## Coding Tasks
 
-Expect **LeetCode medium–hard** difficulty. Two problems per coding round in 45 minutes is common:
+Expect LeetCode medium to hard. Two problems in 45 minutes is common:
 
-- Graph problems (BFS/DFS, shortest path, connected components)
-- Dynamic programming (often on sequences or grids)
+- Graph problems: BFS, DFS, shortest path, connected components
+- Dynamic programming on sequences or grids
 - Tree traversal and manipulation
 - Interval merging and scheduling
-- Hash map / frequency counting patterns
+- Hash map and frequency counting patterns
 - Binary search on answer
 
-**Python, Java, C++, or JavaScript** are accepted. Python is most common. Write clean, readable code — interviewers penalize unnecessary complexity.
+Python, Java, C++, or JavaScript are all accepted. Python is most common. Write clean, readable code. Your interviewer will penalize unnecessary complexity.
 
-**Meta-specific pattern:** They frequently use variations of classic problems (e.g., "LRU cache with expiry" instead of plain LRU). Practice recognizing the underlying structure behind custom problem wrappers.
+Meta frequently wraps classic problems in custom packaging. "LRU cache with expiry" instead of plain LRU, for example. Practice recognizing the underlying pattern behind a custom problem description.
 
 ---
 
@@ -77,23 +77,23 @@ Expect **LeetCode medium–hard** difficulty. Two problems per coding round in 4
 
 | Signal | What they're looking for |
 |--------|--------------------------|
-| **Impact orientation** | Everything is framed around impact. Quantify outcomes in behavioral stories — "increased DAU by X%" beats "improved the system." |
-| **Execution speed** | Meta values people who ship. Show you can move from idea to production quickly without sacrificing quality. |
-| **Data fluency** | Strong ML candidates speak in metrics, experimentation, and statistical significance — not just model architectures. |
-| **Ownership mentality** | Show end-to-end ownership. "I designed, built, launched, and monitored" beats "I contributed to." |
-| **Low-ego collaboration** | Meta values directness without politics. Show you can disagree and commit, and that you don't need credit to contribute. |
-| **Scale instinct** | System design answers that ignore Meta's actual scale (billions of users, petabytes of data per day) score low automatically. |
+| **Impact orientation** | Everything is framed around impact. "Increased DAU by 12%" beats "improved the system." Quantify outcomes in every behavioral story. |
+| **Execution speed** | Meta rewards people who ship. Show you can move from idea to production without sacrificing quality. |
+| **Data fluency** | Strong ML candidates talk in metrics, experiments, and statistical significance, not just model architectures. |
+| **Ownership mentality** | "I designed, built, launched, and monitored" beats "I contributed to." |
+| **Low-ego collaboration** | Meta values directness without politics. Disagree and commit. You don't need credit to contribute. |
+| **Scale instinct** | Designs that ignore Meta's actual scale (billions of users, petabytes per day) score low automatically. |
 
 ---
 
 ## Pro Tips
 
-1. **Practice the "impact + data" behavioral format.** Every Meta behavioral story should end with a measurable outcome. "The system became faster" doesn't land — "latency dropped from 800ms to 120ms, reducing drop-off by 14%" does.
-2. **Meta uses a consistent rubric across interviewers.** Before the interview, understand the four dimensions being scored: coding, system design, behavioral, and culture fit. Prepare for all four equally.
-3. **For ML roles, know A/B testing deeply.** Meta runs thousands of experiments simultaneously. You should be able to explain Type I/II errors, sample size calculation, novelty effects, and how to design a holdout set.
-4. **The E-level matters.** Meta levels significantly affect scope and compensation. If you think you're operating at E6, make sure your stories reflect staff-level impact (cross-team, multi-quarter, high-ambiguity).
-5. **Negotiation works at Meta.** Base, RSU, and signing are all movable. Levels.fyi has accurate band data. Competing offers from Google or other FAANG companies are the strongest lever.
-6. **Ask about org stability.** Meta has gone through significant restructuring (Reality Labs wind-downs, AI pivots). Ask which bets the team is on and how headcount decisions are made — it's not a red flag to ask.
+1. **Every behavioral story needs a number at the end.** "The system became faster" doesn't land. "Latency dropped from 800ms to 120ms, reducing drop-off by 14%" does.
+2. **Understand the four scoring dimensions.** Coding, system design, behavioral, and culture fit are all scored independently. Prepare for all four equally, not just the one you're comfortable with.
+3. **For ML roles, know A/B testing deeply.** Meta runs thousands of experiments simultaneously. Type I and II errors, sample size calculation, novelty effects, holdout sets: all fair game.
+4. **Your E-level matters.** If you think you're operating at E6, make sure your stories reflect staff-level impact: cross-team, multi-quarter, high ambiguity.
+5. **Compensation is negotiable.** Base, RSU, and signing are all movable. Levels.fyi has accurate band data. A competing offer from another top company is your strongest lever.
+6. **Ask about org stability.** Meta has restructured significantly across Reality Labs and AI orgs. It's not a red flag to ask which bets the team is on and how headcount decisions get made.
 
 ---
 
