@@ -21,12 +21,15 @@ Company-specific interview prep guides for AI/tech roles. Each file covers the i
 | NVIDIA | [Nvidia.md](Nvidia.md) | GPU memory hierarchy, distributed training, systems depth |
 | OpenAI | [OpenAI.md](OpenAI.md) | Research mindset bar, RLHF questions, inference system design |
 | Palantir | [Palantir.md](Palantir.md) | Hacker Assessment (PHA), decomp interview, FDE role specifics |
+| Perplexity AI | [PerplexityAI.md](PerplexityAI.md) | RAG-native product, search infrastructure, fast-ship culture |
+| Salesforce | [Salesforce.md](Salesforce.md) | Agentforce, enterprise multi-tenant ML, Einstein AI stack |
 | Scale AI | [ScaleAI.md](ScaleAI.md) | RLHF data pipelines, benchmark contamination, annotation systems |
+| Waymo | [Waymo.md](Waymo.md) | AV perception, prediction and planning, safety-first ML |
 | xAI | [xAI.md](xAI.md) | First-principles bar, competitive coding, early-stage culture |
 
 ## How to Use
 
-Load any guide before an interview to get a quick, structured briefing:
+Load any guide before an interview for a quick, structured briefing:
 
 ```
 /career-ops interview-intel OpenAI
